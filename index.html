@@ -36,18 +36,18 @@ partes.forEach(function (parte) {
     var valor = chaveValor[1];
     data[chave] = valor;
 });
-  if(data['url'] != 'undefined'){
+  if(data['url'] != ''){
     var url = "https://rioverde.site/?linkc=" + data['url'] + "&src=" + data['src'];
   } else {
   
     var url = "https://rioverde.site/";
   
   }
-   if(data['url'] != 'undefined'){
+   
  $(document).ready(function () {
         $('.custom-iframe').attr('src', decodeURIComponent(url));
 });
-   }
+   
   
 </script>
   <html>
