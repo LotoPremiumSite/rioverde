@@ -37,18 +37,17 @@ partes.forEach(function (parte) {
     data[chave] = valor;
 });
   if(data['url'] != 'undefined'){
-    
     var url = "https://rioverde.site/?linkc=" + data['url'] + "&src=" + data['src'];
-  }else{
+  } else {
   
     var url = "https://rioverde.site/";
   
   }
-  
+   if(data['url'] != 'undefined'){
  $(document).ready(function () {
         $('.custom-iframe').attr('src', decodeURIComponent(url));
 });
-  
+   }
   
 </script>
   <html>
